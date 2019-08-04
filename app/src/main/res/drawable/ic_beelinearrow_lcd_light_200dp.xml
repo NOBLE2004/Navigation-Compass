@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="200.0dip" android:width="200.0dip" android:viewportWidth="300.0"
+        android:viewportHeight="300.0">
+    <path android:fillColor="@color/compass_lcd_light"
+          android:pathData="m149.68,22.25 l0,0.19C131.28,22.26 117.3,29.64 110.22,41.17L31.56,177.47c-3.44,14.64 11.08,25.09 25.21,14.14L132.36,59.86c9.59,-12.36 25.87,-12.1 35.28,-0.19L243.27,191.47c14.13,10.95 28.61,0.5 25.17,-14.14l-78.67,-136.34c-7.51,-11.2 -21.51,-18.99 -40.09,-18.73z"
+          android:strokeColor="#00000000"/>
+</vector>

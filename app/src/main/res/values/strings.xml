@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Compass Navigation</string>
+
+    <!--Common-->
+    <string name="back">Back</string>
+    <string name="location_permissions_description">Without location permission we are not able to navigate.</string>
+    <string name="settings">Settings</string>
+
+    <!--Compass-->
+    <string name="compass_dial" translatable="false">Compass Dial</string>
+    <string name="compass_hands" translatable="false">Compass Hands</string>
+    <string name="compass_navigate_to">Navigate to</string>
+    <string name="compass_location_error_settings_inadequate">Location settings are inadequate, to continue fix it in
+        Settings.
+    </string>
+    <string name="compass_destination_location_title">Destination location :</string>
+    <string name="compass_current_location_title">Current location :</string>
+    <string name="compass_distance_to_destination_title">Distance to destination :</string>
+
+    <string name="compass_distance_to_destination_unit"> km</string>
+    <string name="compass_distance_to_destination"> %.2f</string>
+
+    <string name="compass_location_not_established_message">Searching for location…</string>
+    <string name="compass_distance_not_no_calculated">Waiting for location…</string>
+
+    <!--Navigate to lat lng-->
+    <string name="navigate_latitude_hint_text">latitude</string>
+    <string name="navigate_longitude_hint_text">longitude</string>
+    <string name="navigate_to_north">to north</string>
+    <string name="navigate_accept_button_text">accept and navigate</string>
+    <string name="navigate_error_empty_input">Can\'t be empty</string>
+    <string name="navigate_error_wrong_input">Wrong input</string>
+    <string name="navigate_error_parsing_lat_lng">Found problem with reading coordinates, please try again.</string>
+
+    <string name="compass_anyone_out_there">"Anyone out there?"</string>
+    <string name="compass_hello">Hello</string>
+</resources>

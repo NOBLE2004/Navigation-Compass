@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.android.compass.ui.compass.CompassViewModel"/>
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_compass"
+            android:background="@color/compass_lcd_dark"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_centerInParent="true"
+                style="@style/compass_background">
+            <ImageButton android:id="@+id/compass_button_top"
+                         android:layout_alignParentTop="true"
+                         android:layout_centerHorizontal="true"
+                         style="@style/compass_button"/>
+            <ImageButton android:id="@+id/compass_button_bottom"
+                         android:layout_alignParentBottom="true"
+                         android:layout_centerHorizontal="true"
+                         style="@style/compass_button"/>
+            <ImageButton android:id="@+id/compass_button_left"
+                         android:layout_alignParentLeft="true"
+                         android:layout_centerVertical="true"
+                         style="@style/compass_button"/>
+            <ImageButton android:id="@+id/compass_button_right"
+                         android:layout_alignParentRight="true"
+                         android:layout_centerVertical="true"
+                         style="@style/compass_button"/>
+            <RelativeLayout android:id="@+id/compassHandsIv"
+                            android:layout_centerInParent="true"
+                            style="@style/compass_screen">
+                style="@style/compass_screen">
+                <View android:id="@+id/center"
+                      android:visibility="invisible"
+                      android:layout_width="0.0dip"
+                      android:layout_height="0.0dip"
+                      android:layout_centerInParent="true"/>
+                <ImageView
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_beelinearrow_lcd_light_200dp"
+                        style="@style/compass_arrow"/>
+                <TextView android:id="@+id/compassDistanceToDestinationTv"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/center"
+                          android:layout_centerHorizontal="true"
+                          style="@style/compass_distance_value"/>
+                <TextView android:id="@+id/distance_units"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/compassDistanceToDestinationTv"
+                          android:layout_centerHorizontal="true"
+                          style="@style/compass_distance_units"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+                android:id="@+id/compassNavigateToB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_l"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_rounded_blue_button"
+                android:onClick="@{() -> viewModel.showNavigateLatLngDialog()}"
+                android:text="@string/compass_navigate_to"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+    </RelativeLayout>
+</layout>

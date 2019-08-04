@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash_screen</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/textTitle</item>
+    </style>
+
+    <style name="CoordinatesEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:digits">-0123456789.</item>
+        <item name="android:textColor">@color/textContent</item>
+        <item name="android:padding">@dimen/padding_l</item>
+    </style>
+
+    <style name="ButtonTextStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonBlueBgStyle" parent="ButtonTextStyle">
+        <item name="android:background">@drawable/bg_rounded_blue_button</item>
+    </style>
+    <style name="compass">
+        <item name="android:background">@color/compass_lcd_dark</item>
+    </style>
+    <style name="compass_arrow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">150.0dip</item>
+    </style>
+    <style name="compass_arrow_button">
+        <item name="android:layout_width">56.0dip</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="compass_background">
+        <item name="android:background">@drawable/compass</item>
+        <item name="android:layout_width">256.0dip</item>
+        <item name="android:layout_height">256.0dip</item>
+    </style>
+    <style name="compass_button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/compass_button</item>
+        <item name="android:layout_width">42.0dip</item>
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+
+
+
+
+    <style name="compass_distance_units" parent="@style/compass_distance_value">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="compass_distance_value">
+        <item name="android:textSize">26.0dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+    </style>
+    <style name="compass_screen">
+        <item name="android:layout_width">172.0dip</item>
+        <item name="android:layout_height">172.0dip</item>
+    </style>
+    <style name="compass_text">
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textColor">@color/compass_lcd_light</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

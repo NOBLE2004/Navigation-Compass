@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="40.0dip" android:top="40.0dip" android:right="40.0dip" android:bottom="40.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/compass_lcd_dark" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="42.0dip" android:color="@color/black" />
+        </shape>
+    </item>
+</layer-list>
